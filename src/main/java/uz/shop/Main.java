@@ -22,7 +22,7 @@ public class Main extends Application {
         primaryStage.show();
         ctx = new AnnotationConfigApplicationContext();
         ctx.register(PersistenceConfig.class);
-       // ctx.register(AppConfig.class);
+        ctx.register(AppConfig.class);
         ctx.refresh();
     }
 

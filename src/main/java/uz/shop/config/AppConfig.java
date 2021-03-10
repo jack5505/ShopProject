@@ -2,6 +2,7 @@ package uz.shop.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /*
  *
@@ -10,5 +11,6 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan(basePackages = {"uz.shop.controllers"})
+@EnableJpaRepositories(basePackages = {"uz.shop.repository"})
 public class AppConfig {
 }
