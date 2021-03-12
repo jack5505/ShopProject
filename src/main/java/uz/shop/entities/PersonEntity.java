@@ -31,7 +31,7 @@ public class PersonEntity  implements Serializable {
     private Sex gender;
 
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "person")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "person",orphanRemoval = true)
     private List<LoginEntity>  logins =new ArrayList<LoginEntity>();
 
     public Long getId() {

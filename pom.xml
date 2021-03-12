@@ -103,5 +103,10 @@
             <artifactId>commons-dbcp2</artifactId>
             <version>2.6.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.jfoenix</groupId>
+            <artifactId>jfoenix</artifactId>
+            <version>8.0.10</version>
+        </dependency>
     </dependencies>
 </project>

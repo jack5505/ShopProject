@@ -16,9 +16,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("uz.shop.views/sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("sample/Login.fxml"));
+        primaryStage.setTitle("Shop Magazine");
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
         ctx = new AnnotationConfigApplicationContext();
         ctx.register(PersistenceConfig.class);
